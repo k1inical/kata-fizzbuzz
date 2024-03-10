@@ -14,15 +14,4 @@ class FizzBuzzTest {
     assertThat(fizzBuzzUnderTest.generate()).isEqualTo(TEST_INPUT);
   }
 
-  @Test
-  void testGenerate(){
-    assertThat(fizzBuzzUnderTest.generate())
-            .startsWith("0, ")
-            .contains("0, 1, 2, fizz")
-            .contains("0, 1, 2, fizz, 4, buzz, fizz, ")
-            .contains("0, 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz,")
-            .endsWith("buzz")
-            .isNotEmpty()
-            .isNotNull();
-  }
 }
